@@ -174,7 +174,7 @@ $settings = $settings->select(array());
                 </ul>
                 <div class="catAdd"><a class="js_cat-add aa_js-actionOpen aa_actionBtn"
                                        href="atomic-core/temp-forms/temp-category-form.php"><span
-                            class="fa fa-plus"></span> Add Category</a></div>
+                            class="fa fa-folder-o"></span> Add Category</a></div>
             </nav>
 
 
@@ -309,7 +309,7 @@ $settings = $settings->select(array());
                         <?php } ?>
 
                         <li class="expandItem">
-                            <a href="#"><i class="fa fa-expand" aria-hidden="true"></i> Expand</a>
+                            <a href="#" class="js-expand"><i class="fa fa-arrows-v" aria-hidden="true"></i> Expand</a>
                         </li>
 
 

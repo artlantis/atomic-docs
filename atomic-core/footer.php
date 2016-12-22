@@ -186,9 +186,9 @@ if (file_exists($filename)) {
 
 
 
-<?php 
+<?php
   //Uncomment the following include to enable client mode.
-  //include "clientmode.php" 
+  //include "clientmode.php"
 ?>
 
 
@@ -196,7 +196,7 @@ if (file_exists($filename)) {
 
 
 
-<script src="atomic-core/js/min/compiled.min.js"></script>
+<script src="atomic-core/js/min/compiled.min.js?v=3.4.2"></script>
 
 <script>
     var monkeyList = new List('search-list', {

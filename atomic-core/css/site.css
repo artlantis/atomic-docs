@@ -1160,11 +1160,10 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     color: #9DA0A0;
     margin-bottom: 10px;
     font-size: 10px;
-    background: #eee;
     padding: 4px 9px;
     display: inline-block;
     border-radius: 4px;
-    margin-left: 15px; }
+    margin-left: 25px; }
   #atomsWrap .aa_fileSection__file {
     padding-left: 39px; }
     #atomsWrap .aa_fileSection__file .fa {
@@ -1239,13 +1238,15 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   #atomsWrap .catAdd a {
     color: #9DA0A0;
     font-size: 10px;
-    background: #eee;
     padding: 4px 9px;
     display: inline-block;
     border-radius: 4px;
     margin-left: 15px;
     position: relative;
-    top: -14px; }
+    border: 1px dashed; }
+  #atomsWrap .catAdd .fa {
+    font-size: 12px;
+    margin-right: 4px; }
   @media (max-width: 824px) {
     #atomsWrap .atoms-side {
       transition: all .25s;
@@ -1369,6 +1370,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     border-top: 0;
     max-height: 200px;
     overflow: auto; }
+  #atomsWrap .codeBlocks.codeBlocks-open .atomic-editorInner {
+    max-height: 100%; }
   #atomsWrap .ace-tm {
     background-color: #f7f7f7;
     font-size: 15px;
@@ -1433,6 +1436,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
       left: 0; }
     #atomsWrap .atomic-editorWrap-active .ace_scroller {
       left: 57px !important; }
+    #atomsWrap .atomic-editorWrap-active .atomic-editorInner {
+      max-height: 100%; }
   #atomsWrap .clientMode .atomic-editorWrap-active {
     margin-bottom: 0; }
     #atomsWrap .clientMode .atomic-editorWrap-active .ace-tm .ace_gutter {

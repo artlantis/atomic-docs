@@ -18,6 +18,18 @@
 	max-height: 200px;
 	overflow: auto;
 }
+
+.codeBlocks.codeBlocks-open{
+	.atomic-editorInner{
+		max-height: 100%;
+	}
+}
+
+
+
+
+
+
 .ace-tm {
   background-color: #f7f7f7;
   font-size: 15px;
@@ -125,6 +137,9 @@
 	}
 	.ace_scroller {
 	    left: 57px !important;
+	}
+	.atomic-editorInner{
+		max-height: 100%;
 	}
 }
 
