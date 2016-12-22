@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "classmap": [
+      "vendor"
+    ]
+  },
+
+  "require": {
+    "leafo/scssphp": "0.6.6"
+  }
+}
