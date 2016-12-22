@@ -52,21 +52,19 @@ $('.atomic-editorWrap').submit(function (event) {
                 console.log('not success');
 
 
-
                 if (data.errors.name) {
                     $('.aa_errorBox__message').html("");
                     $('.atoms-main').prepend('<div class="aa_errorBox"><p class="aa_errorBox__message"><i class="fa fa-times aa_js-errorBox__close"></i> ' + data.errors.name + '</p></div>').find('.aa_errorBox').hide().fadeIn(200);
                 }
 
             } else {
-
-
+                
 
                 $('.se-pre-con').fadeIn('slow');
 
                 setTimeout(function() {
                   window.location = 'atomic-core/?cat='+catName;
-                }, 2000);
+                }, 1000);
             }
         })
         .fail(function (data) {

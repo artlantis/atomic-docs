@@ -25,9 +25,6 @@ $settings = $settings->select(array());
     <div class="atoms-overflow">
 
 
-
-
-
     <i class="fa fa-times fa-3x js_searchWindow__close searchWindow__close"></i>
 
     <div class="SearchContent">
@@ -311,6 +308,11 @@ $settings = $settings->select(array());
                                                        role="tab" data-toggle="tab">( ) Javascript</a></li>
                         <?php } ?>
 
+                        <li class="expandItem">
+                            <a href="#"><i class="fa fa-expand" aria-hidden="true"></i> Expand</a>
+                        </li>
+
+
                     </ul>
 
                     <!-- Tab panes -->
@@ -322,8 +324,9 @@ $settings = $settings->select(array());
                             <form class="atomic-editorWrap" data-editorFormComp="<?php echo $component['component'] ?>"
                                   data-editorFormCat="<?php echo $cat; ?>"
                                   data-codeDest="<?php echo $setting['component_directory'] ?>">
+                                <div class="copyBtn copyBtn-markup" data-clipboard-text=""><i class="fa fa-clone" aria-hidden="true"></i> Copy</div>
                                 <div class="atomic-editorInner">
-                                    <div class="copyBtn copyBtn-markup" data-clipboard-text=""><i class="fa fa-clone" aria-hidden="true"></i> Copy</div>
+
                                     <div class="copyBtn copyBtn-edit js-copyBtn-edit">Edit</div>
                                     <?php $markup_file_content = file_get_contents('../' . $setting['component_directory'] . '/' . $cat . '/' . $component['component'] . '.' . $setting['component_extension'] . '', true); ?>
                                     <div class="atomic-editor"
@@ -345,8 +348,9 @@ $settings = $settings->select(array());
                             <form class="atomic-editorWrap" data-editorFormComp="<?php echo $component['component'] ?>"
                                   data-editorFormCat="<?php echo $cat; ?>"
                                   data-codeDest="<?php echo $setting['component_directory'] ?>">
+                                <div class="copyBtn copyBtn-output" data-clipboard-text=""><i class="fa fa-clone" aria-hidden="true"></i> Copy</div>
                                 <div class="atomic-editorInner">
-                                    <div class="copyBtn copyBtn-output" data-clipboard-text=""><i class="fa fa-clone" aria-hidden="true"></i> Copy</div>
+
                                     <div class="atomic-editor atomic-editor-output"
                                          id="editor-output-<?php echo $component['component'] ?>"></div>
                                 </div>
@@ -358,8 +362,9 @@ $settings = $settings->select(array());
                             <form class="atomic-editorWrap" data-editorFormComp="<?php echo $component['component'] ?>"
                                   data-editorFormCat="<?php echo $cat; ?>"
                                   data-codeDest="<?php echo $setting['styles_directory'] ?>">
+                                <div class="copyBtn copyBtn-styles" data-clipboard-text=""><i class="fa fa-clone" aria-hidden="true"></i> Copy</div>
                                 <div class="atomic-editorInner">
-                                    <div class="copyBtn copyBtn-styles" data-clipboard-text=""><i class="fa fa-clone" aria-hidden="true"></i> Copy</div>
+
                                     <div class="copyBtn copyBtn-edit js-copyBtn-edit">Edit</div>
 
                                     <?php $style_file_content = file_get_contents('../' . $setting['styles_directory'] . '/' . $cat . '/_' . $component['component'] . '.' . $setting['styles_extension'] . '', true); ?>
@@ -385,8 +390,9 @@ $settings = $settings->select(array());
                                       data-editorFormComp="<?php echo $component['component'] ?>"
                                       data-editorFormCat="<?php echo $cat; ?>"
                                       data-codeDest="<?php echo $setting['js_directory'] ?>">
+                                    <div class="copyBtn copyBtn-js" data-clipboard-text=""><i class="fa fa-clone" aria-hidden="true"></i> Copy</div>
                                     <div class="atomic-editorInner">
-                                        <div class="copyBtn copyBtn-js" data-clipboard-text=""><i class="fa fa-clone" aria-hidden="true"></i> Copy</div>
+
                                         <div class="copyBtn copyBtn-edit js-copyBtn-edit">Edit</div>
 
                                         <?php $style_file_content = file_get_contents('../' . $setting['js_directory'] . '/' . $component['component'] . '.' . $setting['js_extension'] . '', true); ?>

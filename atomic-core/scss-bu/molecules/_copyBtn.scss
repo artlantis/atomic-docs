@@ -1,7 +1,14 @@
 /* CSS Document */
+.copyBtnItem{
+    //float: none;
+}
+
+
+
+
 
 .copyBtn{
-    position: absolute;
+    //position: absolute;
     top: 0;
     right: 0;
     z-index: 10;
@@ -12,7 +19,7 @@
     cursor: pointer;
     background-color: #fff;
     border: 1px solid #e1e1e8;
-    font-family:$font1;
+    font-family: $font1;
     //border-radius: 0 4px 0 4px;
 }
 .copyBtn-edit{

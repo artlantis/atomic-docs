@@ -7,9 +7,6 @@ $('.js_cat-edit').click(function (event) {
 
 
 
-
-
-
             $('#form-delete-category').submit(function (event) {
                 var catName = $(this).find('input[name=catName]').val().replace(/\s+/g, '');
                 var formData = {

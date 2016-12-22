@@ -1,7 +1,7 @@
 .atomic-editorWrap{
   //padding:20px 0;
   //padding-top:20px;
-  
+
   font-size:16px;
   position: relative;
   margin-bottom: 0;
@@ -14,6 +14,9 @@
 	background-color: #f7f7f7;
 	border: 1px solid #dadada;
 	border-top: 0;
+
+	max-height: 200px;
+	overflow: auto;
 }
 .ace-tm {
   background-color: #f7f7f7;
@@ -40,7 +43,7 @@
 
 }
 
-.ace_hidden-cursors {opacity:0} 
+.ace_hidden-cursors {opacity:0}
 
 
 
@@ -137,6 +140,7 @@
 		}
 	}
 }
+
 
 
 

@@ -16,11 +16,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <link rel="stylesheet" type="text/css" href="atomic-core/css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=3.4.2">
+
+    <link rel="stylesheet" type="text/css" href="atomic-core/css/site.css?v=3.4.2">
 
     <link rel="stylesheet" href="atomic-core/font-awesome/css/font-awesome.min.css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+
 
     <?php
         $filename = '../atomic-head.php';
@@ -28,6 +32,20 @@
             include("../atomic-head.php");
         }
     ?>
+
+
+    <?php
+
+        $parse_uri = explode( 'wp-content', $_SERVER['SCRIPT_FILENAME'] );
+
+        $file_name =  $parse_uri[0] . 'wp-load.php';
+
+        if (file_exists($file_name)) {
+            require_once( $parse_uri[0] . 'wp-load.php' );
+        }
+
+    ?>
+
 
 
 </head>
